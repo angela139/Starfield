@@ -31,7 +31,7 @@ class Particle
   void show(){
     // random colored stars
     fill(myColor);
-    star((int)myX, (int)myY, 10, 40, 5);
+    starshape((int)myX, (int)myY, 10, 40, 5);
   }
   void move(){
     // moves star outward and back inward
@@ -64,7 +64,7 @@ class OddballParticle extends Particle
   }
 }
 
-void star(float x, float y, float radius1, float radius2, int npoints) {
+void starshape(float x, float y, float radius1, float radius2, int npoints) {
   float angle = TWO_PI / npoints;
   float halfAngle = angle/2.0;
   beginShape();
